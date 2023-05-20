@@ -14,4 +14,6 @@ void main() {
   } else {
     print("imposter!!");
   }
+  List<int> gfg = [1,2,3,4,5]; // if an element does not exist, it's index is -1
+  print(gfg);
 }
