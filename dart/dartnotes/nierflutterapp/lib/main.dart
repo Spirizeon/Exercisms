@@ -11,12 +11,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // scaffold widget
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white70,
       appBar: AppBar(
         //topbar
-        title: Text('Nier: Automata',
+        title: Text("app",
             style: TextStyle(
-              fontFamily: 'JBM',
+              fontFamily: "JBM",
               fontWeight: FontWeight.w100,
               letterSpacing: 0.01,
             )), //title text
@@ -25,13 +25,35 @@ class Home extends StatelessWidget {
       ),
       // body: Text('hello ninjas')),
       body: Center(
-          child: Image(
-        image:
-            NetworkImage('https://w.wallhaven.cc/full/1p/wallhaven-1pxkm3.jpg'),
-      )),
+          // child: Image(
+          //     image: NetworkImage('https://w.wallhaven.cc/full/dg/wallhaven-dg5rpl.png')
+          // ),
+
+          // child: ElevatedButton(
+          //      onPressed: () {}, child: Text('click me'), color: Colors.orange)),
+
+          //     child: TextButton(
+          //   onPressed: () {
+          //     // has button code here (can be Backend connection)
+          //     print('you clicked me');
+          //   },
+          //   child: Text('Click ME'),
+          // )
+
+          ),
+
+      // CAUTION: Changes to Flutter widgets since 2021 updates
+      // FlatButton → TextButton
+      // RaisedButton → ElevatedButton
+      // OutlineButton → OutlinedButton
+      // ButtonTheme → TextButtonTheme, ElevatedButtonTheme, OutlineButtonTheme        ),//centre
       floatingActionButton: FloatingActionButton(
-        child: Text('Hit'),
-        onPressed: (null),
+        child: Icon(
+          Icons.anchor_sharp,
+          color: Colors.white30,
+          size: 50.0, //in pixels
+        ),
+        onPressed: () {},
         backgroundColor: Colors.black54,
       ),
     );
