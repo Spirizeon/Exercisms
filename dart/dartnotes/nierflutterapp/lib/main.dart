@@ -51,17 +51,26 @@ class Home extends StatelessWidget {
       // ), //container
 
       body: Row(children: <Widget>[
-        Text('hello world'),
-        TextButton(
+        ElevatedButton(
           onPressed: () {},
           child: Text('click me'),
         ), //textbutton
-        Container(
-          color: Colors.cyan,
-          padding: EdgeInsets.all(30.0),
-          child: Text('inside container'),
-        ), //container
-      ] //children
+
+        ElevatedButton(
+          onPressed: () {},
+          child: Text('click me'),
+        ), //textbutton
+
+        ElevatedButton(
+          onPressed: () {},
+          child: Text('click me'),
+        ), //textbutton
+
+        ElevatedButton(
+          onPressed: () {},
+          child: Text('click me'),
+        ), //textbutton
+      ] //children:
           ), //body
 
       // CAUTION: Changes to Flutter widgets since 2021 updates
